@@ -1,0 +1,11 @@
+{
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git"
+    }
+  ],
+  "require": {
+    "groupdocscloud/groupdocs-conversion-cloud": "*"
+  }
+}
