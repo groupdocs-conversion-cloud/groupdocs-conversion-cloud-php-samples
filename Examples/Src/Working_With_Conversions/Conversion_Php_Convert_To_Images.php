@@ -1,19 +1,14 @@
 ﻿<?php
-	require_once('C:\xampp\htdocs\groupdocs-conversion-cloud-php-examples-master\vendor\autoload.php');
 
-	//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+include(dirname(__DIR__) . '\CommonUtils.php');
 
-	$configuration = new GroupDocs\Conversion\Configuration();
-	$configuration->setAppSid("XXXXX-XXXXX-XXXXX-XXXXX");
-	$configuration->setAppKey("XXXXXXXXX");
-
-	$apiInstance = new GroupDocs\Conversion\ConversionApi($configuration); 
+    $conversionApi = CommonUtils::GetConversionApiInstance();
 
 	try 
 	{
 		$settings = new GroupDocs\Conversion\Model\ConvertSettings();
 
-		$settings->setStorage("MYStorage");
+		$settings->setStorageName(CommonUtils::$MyStorage);
 		$settings->setFilePath("conversions\\password-protected.docx");
 		$settings->setFormat("jpeg");
 
@@ -38,9 +33,9 @@
 		$settings->setOutputPath("converted\\tojpeg");
 		
 		$request = new GroupDocs\Conversion\Model\Requests\ConvertDocumentRequest($settings);
-		$response = $apiInstance->convertDocument($request);
-		
-		echo "Document conveted successfully.";
+
+		$response = $conversionApi->convertDocument($request);
+		echo "Document converted successfully: ", $response[0]->getUrl();
 	} 
 	catch (Exception $e) 
 	{

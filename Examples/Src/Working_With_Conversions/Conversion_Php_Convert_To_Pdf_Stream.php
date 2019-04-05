@@ -44,12 +44,13 @@ include(dirname(__DIR__) . '\CommonUtils.php');
 		$convertOptions->setRemovePdfaCompliance(false);
 		$settings->setConvertOptions($convertOptions);
 
-		$settings->setOutputPath("converted\\topdf");
+		// set OutputPath as empty will result the output as document Stream'
+		$settings->setOutputPath("");
 		
 		$request = new GroupDocs\Conversion\Model\Requests\ConvertDocumentRequest($settings);
 
-		$response = $conversionApi->convertDocument($request);
-		echo "Document converted successfully: ", $response[0]->getUrl();
+		$response = $conversionApi->convertDocumentDownload($request);
+		echo "Document converted successfully: Document Size: ", $response->getSize();
 	} 
 	catch (Exception $e) 
 	{

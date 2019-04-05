@@ -1,24 +1,15 @@
 <?php
-	require_once('C:\xampp\htdocs\groupdocs-conversion-cloud-php-examples-master\vendor\autoload.php');
 
-	//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+include(dirname(__DIR__) . '\CommonUtils.php');
 
-	$configuration = new GroupDocs\Conversion\Configuration();
-	$configuration->setAppSid("XXXXX-XXXXX-XXXXX-XXXXX");
-	$configuration->setAppKey("XXXXXXXXX");
+	try {
+		$apiInstance = CommonUtils::GetFolderApiInstance();
 
-	$apiInstance = new GroupDocs\Conversion\FolderApi($configuration); 
-
-	try 
-	{
-		$request = new GroupDocs\Conversion\Model\Requests\CreateFolderRequest("conversions", "MYStorage");
+		$request = new GroupDocs\Conversion\Model\Requests\CreateFolderRequest("conversions", CommonUtils::$MyStorage);
 		$apiInstance->createFolder($request);
 		
 		echo "Expected response type is Void: 'conversions' folder created.", "<br />";
-	} 
-	catch (Exception $e) 
-	{
-		echo  "Something went wrong: ",  $e->getMessage(), "<br />";
-		PHP_EOL;
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
 	}
 ?>
