@@ -10,7 +10,7 @@ include(dirname(__DIR__) . '\CommonUtils.php');
 
 		$settings->setStorageName(CommonUtils::$MyStorage);
 		$settings->setFilePath("conversions\\password-protected.docx");
-		$settings->setFormat("html");
+		$settings->setFormat("jpeg");
 
 		$loadOptions = new GroupDocs\Conversion\Model\DocxLoadOptions();
 		$loadOptions->setPassword("password");
@@ -19,20 +19,24 @@ include(dirname(__DIR__) . '\CommonUtils.php');
 
 		$settings->setLoadOptions($loadOptions);
 
-		$convertOptions = new GroupDocs\Conversion\Model\HtmlConvertOptions();
+		$convertOptions = new GroupDocs\Conversion\Model\JpegConvertOptions();
 		$convertOptions->setFromPage(1);
 		$convertOptions->setPagesCount(2);
 		$convertOptions->setFromPage(1);
 		$convertOptions->setUsePdf(true);
-		$convertOptions->setFixedLayout(true);
+		$convertOptions->setGrayscale(false);
+		$convertOptions->setHeight(1024);
+		$convertOptions->setQuality(100);
+		$convertOptions->setRotateAngle(90);
 		$settings->setConvertOptions($convertOptions);
 
-		$settings->setOutputPath("converted\\tohtml");
+		// set OutputPath as empty will result the output as document Stream'
+		$settings->setOutputPath("");
 		
 		$request = new GroupDocs\Conversion\Model\Requests\ConvertDocumentRequest($settings);
 
-		$response = $conversionApi->convertDocument($request);
-		echo "Document converted successfully: ", $response[0]->getUrl();
+		$response = $conversionApi->convertDocumentDownload($request);
+		echo "Document converted successfully: Document Size: ", $response->getSize();
 	} 
 	catch (Exception $e) 
 	{

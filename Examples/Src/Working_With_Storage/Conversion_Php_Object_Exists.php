@@ -1,24 +1,15 @@
 <?php
-	require_once('C:\xampp\htdocs\groupdocs-conversion-cloud-php-examples-master\vendor\autoload.php');
 
-	//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+include(dirname(__DIR__) . '\CommonUtils.php');
 
-	$configuration = new GroupDocs\Conversion\Configuration();
-	$configuration->setAppSid("XXXXX-XXXXX-XXXXX-XXXXX");
-	$configuration->setAppKey("XXXXXXXXX");
+	try {
+		$apiInstance = CommonUtils::GetStorageApiInstance();
 
-	$apiInstance = new GroupDocs\Conversion\StorageApi($configuration); 
-
-	try 
-	{
-		$request = new GroupDocs\Conversion\Model\Requests\ObjectExistsRequest("conversions\\one-page.docx", "MYStorage");
+		$request = new GroupDocs\Conversion\Model\Requests\ObjectExistsRequest("conversions\one-page.docx", CommonUtils::$MyStorage);
 		$response = $apiInstance->objectExists($request);
 		
-		echo "Expected response type is ObjectExist: ", $response->getExists();
-	} 
-	catch (Exception $e) 
-	{
-		echo  "Something went wrong: ",  $e->getMessage(), "<br />";
-		PHP_EOL;
+		echo "Expected response type is ObjectExist: ", $response;
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
 	}
 ?>

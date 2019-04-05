@@ -1,24 +1,15 @@
 <?php
-	require_once('C:\xampp\htdocs\groupdocs-conversion-cloud-php-examples-master\vendor\autoload.php');
 
-	//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+include(dirname(__DIR__) . '\CommonUtils.php');
 
-	$configuration = new GroupDocs\Conversion\Configuration();
-	$configuration->setAppSid("XXXXX-XXXXX-XXXXX-XXXXX");
-	$configuration->setAppKey("XXXXXXXXX");
+	try {
+		$apiInstance = CommonUtils::GetFolderApiInstance();
 
-	$apiInstance = new GroupDocs\Conversion\FolderApi($configuration); 
-
-	try 
-	{
-		$request = new GroupDocs\Conversion\Model\Requests\DeleteFolderRequest("conversions\\conversions1", "MYStorage", true);
+		$request = new GroupDocs\Conversion\Model\Requests\DeleteFolderRequest("conversions1\\conversions1", CommonUtils::$MyStorage, true);
 		$apiInstance->deleteFolder($request);
 		
-		echo "Expected response type is Void: 'conversions/conversions1' folder deleted recusrsively.", "<br />";
-	} 
-	catch (Exception $e) 
-	{
-		echo  "Something went wrong: ",  $e->getMessage(), "<br />";
-		PHP_EOL;
+		echo "Expected response type is Void: 'conversions1/conversions' folder deleted recusrsively.", "<br />";
+	} catch (Exception $e) {
+		echo "Something went wrong: ", $e->getMessage(), "\n";
 	}
 ?>
