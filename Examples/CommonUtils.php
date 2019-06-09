@@ -12,8 +12,8 @@ class CommonUtils {
     static $ApiBaseUrl = 'https://api.groupdocs.cloud';
 	static $MyStorage = 'XXXXX';
 
-    // Getting the Conversion API Instance
-    public static function GetConversionApiInstance() {
+    // Getting the Convert API Instance
+    public static function GetConvertApiInstance() {
         // intializing the configuration
         $configuration = new GroupDocs\Conversion\Configuration();
 
@@ -22,8 +22,22 @@ class CommonUtils {
         $configuration->setAppKey(CommonUtils::$AppKey);
         $configuration->setApiBaseUrl(CommonUtils::$ApiBaseUrl);
 
-        // Retrun the new ConversionAPI instance
-        return new GroupDocs\Conversion\ConversionApi($configuration);
+        // Retrun the new ConvertApi instance
+        return new GroupDocs\Conversion\ConvertApi($configuration);
+    }
+
+    // Getting the Info API Instance
+    public static function GetConvertApiInstance() {
+        // intializing the configuration
+        $configuration = new GroupDocs\Conversion\Configuration();
+
+        // Seting the configurations
+        $configuration->setAppSid(CommonUtils::$AppSid);
+        $configuration->setAppKey(CommonUtils::$AppKey);
+        $configuration->setApiBaseUrl(CommonUtils::$ApiBaseUrl);
+
+        // Retrun the new InfoApi instance
+        return new GroupDocs\Conversion\InfoApi($configuration);
     }
 
      // Getting the Conversion StorageAPI API Instance

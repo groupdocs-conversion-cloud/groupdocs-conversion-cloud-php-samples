@@ -2,7 +2,7 @@
 
 include(dirname(__DIR__) . '\CommonUtils.php');
 
-    $conversionApi = CommonUtils::GetConversionApiInstance();
+    $convertApi = CommonUtils::GetConvertApiInstance();
 
 	try 
 	{
@@ -34,7 +34,7 @@ include(dirname(__DIR__) . '\CommonUtils.php');
 		
 		$request = new GroupDocs\Conversion\Model\Requests\ConvertDocumentRequest($settings);
 
-		$response = $conversionApi->convertDocument($request);
+		$response = $convertApi->convertDocument($request);
 		echo "Document converted successfully: ", $response[0]->getUrl();
 	} 
 	catch (Exception $e) 

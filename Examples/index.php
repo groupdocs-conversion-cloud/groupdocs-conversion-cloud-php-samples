@@ -21,6 +21,13 @@
             </li>                
             <li>
                 <h3>
+                    Document Information/Metadata</h3>
+                <ol>
+                    <li><a href="Document_Information/Conversion_Php_Get_Document_Information.php" target="_blank">Get_Document_Information_Metadata</a></li>
+                </ol>
+            </li>                
+            <li>
+                <h3>
                     Working with Storage</h3>
                 <ol>
                     <li><a href="Working_With_Storage/Conversion_Php_Storage_Exist.php" target="_blank">Storage_Exist</a></li>

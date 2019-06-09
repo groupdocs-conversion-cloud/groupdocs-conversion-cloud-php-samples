@@ -3,10 +3,10 @@
 include(dirname(__DIR__) . '\CommonUtils.php');
 
 try {
-    $conversionApi = CommonUtils::GetConversionApiInstance();
+    $infoApi = CommonUtils::GetInfoApiInstance();
 
 	$request = new GroupDocs\Conversion\Model\Requests\GetSupportedConversionTypesRequest();
-    $response = $conversionApi->getSupportedConversionTypes($request);
+    $response = $infoApi->getSupportedConversionTypes($request);
 
     echo '<b>Supported file formats<br /></b>';
 	foreach($response as $key => $format) {
