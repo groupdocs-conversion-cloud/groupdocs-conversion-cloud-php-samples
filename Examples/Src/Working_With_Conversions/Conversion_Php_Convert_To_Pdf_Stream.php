@@ -2,7 +2,7 @@
 
 include(dirname(__DIR__) . '\CommonUtils.php');
 
-    $conversionApi = CommonUtils::GetConversionApiInstance();
+    $convertApi = CommonUtils::GetConvertApiInstance();
 
 	try 
 	{
@@ -49,7 +49,7 @@ include(dirname(__DIR__) . '\CommonUtils.php');
 		
 		$request = new GroupDocs\Conversion\Model\Requests\ConvertDocumentRequest($settings);
 
-		$response = $conversionApi->convertDocumentDownload($request);
+		$response = $convertApi->convertDocumentDownload($request);
 		echo "Document converted successfully: Document Size: ", $response->getSize();
 	} 
 	catch (Exception $e) 
