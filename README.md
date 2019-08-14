@@ -15,6 +15,48 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of Php Cloud SDK examples that help you learn the product features
 
+## Dependencies
+- PHP 5.5 or later
+
+## Authorization
+To use SDK you need AppSID and AppKey authorization keys. You can get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).  
+
+## Installation & Usage
+### Composer
+
+The package is available at [Packagist](https://packagist.org/packages/groupdocscloud/groupdocs-conversion-cloud) and it can be installed via [Composer](http://getcomposer.org/) by executing following command:
+```
+composer require groupdocscloud/groupdocs-conversion-cloud
+``` 
+
+Or you can install SDK via [Composer](http://getcomposer.org/) directly from this repository, add the following to `composer.json`:
+
+```
+{
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git"
+    }
+  ],
+  "require": {
+    "groupdocscloud/groupdocs-conversion-cloud": "*"
+  }
+}
+```
+
+Then run `composer install`
+
+### Manual Installation
+
+Clone or download this repository, then run `composer install` in the root directory to install dependencies and include `autoload.php` into your code file:
+
+```php
+require_once('/path/to/groupdocs-conversion-cloud-php/vendor/autoload.php');
+```
+
+
+
 ## Resources
 
 + **Website:** [www.GroupDocs.cloud](http://www.GroupDocs.cloud)
