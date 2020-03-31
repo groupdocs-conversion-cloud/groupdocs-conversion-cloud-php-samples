@@ -3,8 +3,8 @@
 use GroupDocs\Conversion\Model;
 use GroupDocs\Conversion\Model\Requests;
 
-// This example demonstrates how to convert word processing document into html document
-class ConvertToHtml {
+// This example demonstrates how to convert html document into pdf document with page numbering
+class ConvertHtmlWithPageNumbering {
     public static function Run() {
         // Create necessary API instances       
         $apiInstance = Utils::GetConvertApiInstance();        
@@ -12,16 +12,13 @@ class ConvertToHtml {
         // Prepare convert settings
         $settings = new Model\ConvertSettings();
         $settings->setStorageName(Utils::$MyStorage);
-        $settings->setFilePath("WordProcessing/four-pages.docx");
-        $settings->setFormat("html");
+        $settings->setFilePath("Html/sample.html");
+		$settings->setFormat("pdf");
+		
+        $loadOptions = new Model\HtmlLoadOptions();
+		$loadOptions->setPageNumbering(true);
 
-        $convertOptions = new Model\HtmlConvertOptions();
-        $convertOptions->setFromPage(1);
-        $convertOptions->setPagesCount(1);
-        $convertOptions->setFixedLayout(true);
-        $convertOptions->setFixedLayoutShowBorders(true);
-
-        $settings->setConvertOptions($convertOptions);
+        $settings->setLoadOptions($loadOptions);
         $settings->setOutputPath("converted");
 
         // Convert

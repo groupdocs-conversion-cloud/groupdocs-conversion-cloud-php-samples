@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "31ce868d3cbb0a163340209c88a25f72",
+    "content-hash": "49595f1b174918a18e80fd78029330fd",
     "packages": [
         {
             "name": "groupdocscloud/groupdocs-conversion-cloud",
-            "version": "20.2",
+            "version": "20.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git",
-                "reference": "8ef3f380ad901e8aaaa2bd73b6a5ee47b921c114"
+                "reference": "a1da22a9dcdf46aaf7cd178cb87815f472edb205"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/8ef3f380ad901e8aaaa2bd73b6a5ee47b921c114",
-                "reference": "8ef3f380ad901e8aaaa2bd73b6a5ee47b921c114",
+                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/a1da22a9dcdf46aaf7cd178cb87815f472edb205",
+                "reference": "a1da22a9dcdf46aaf7cd178cb87815f472edb205",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "php",
                 "sdk"
             ],
-            "time": "2020-02-12T11:57:31+00:00"
+            "time": "2020-03-31T06:21:42+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

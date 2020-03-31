@@ -3,8 +3,9 @@
 use GroupDocs\Conversion\Model;
 use GroupDocs\Conversion\Model\Requests;
 
-// This example demonstrates how to convert word processing document into html document
-class ConvertToHtml {
+// This example demonstrates how to convert msg document into pdf document
+// and replace field labels to custom values
+class ConvertEmailWithFieldLabels {
     public static function Run() {
         // Create necessary API instances       
         $apiInstance = Utils::GetConvertApiInstance();        
@@ -12,16 +13,16 @@ class ConvertToHtml {
         // Prepare convert settings
         $settings = new Model\ConvertSettings();
         $settings->setStorageName(Utils::$MyStorage);
-        $settings->setFilePath("WordProcessing/four-pages.docx");
-        $settings->setFormat("html");
+        $settings->setFilePath("Email/sample.msg");
+		$settings->setFormat("pdf");
+		
+        $loadOptions = new Model\EmailLoadOptions();
+        $fieldLabel = new Model\FieldLabel();
+        $fieldLabel->setField(Model\FieldLabel::FIELD_FROM);
+        $fieldLabel->setLabel("Sender");
+		$loadOptions->setFieldLabels([$fieldLabel]);
 
-        $convertOptions = new Model\HtmlConvertOptions();
-        $convertOptions->setFromPage(1);
-        $convertOptions->setPagesCount(1);
-        $convertOptions->setFixedLayout(true);
-        $convertOptions->setFixedLayoutShowBorders(true);
-
-        $settings->setConvertOptions($convertOptions);
+        $settings->setLoadOptions($loadOptions);
         $settings->setOutputPath("converted");
 
         // Convert
