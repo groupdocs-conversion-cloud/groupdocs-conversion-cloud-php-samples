@@ -13,6 +13,7 @@ include(__DIR__ . '\Convert\ConvertToHtml.php');
 include(__DIR__ . '\Convert\ConvertToImage.php');
 include(__DIR__ . '\Convert\ConvertToPresentation.php');
 include(__DIR__ . '\Convert\ConvertToSpreadsheet.php');
+include(__DIR__ . '\Convert\ConvertToPdfDirect.php');
 
 include(__DIR__ . '\Common\AddWatermark.php');
 include(__DIR__ . '\Common\ConvertConsecutivePages.php');
@@ -64,6 +65,7 @@ ConvertToHtml::Run();
 ConvertToImage::Run();
 ConvertToPresentation::Run();
 ConvertToSpreadsheet::Run();
+ConvertToPdfDirect::Run();
 
 // Document conversion examples with common options
 AddWatermark::Run();
