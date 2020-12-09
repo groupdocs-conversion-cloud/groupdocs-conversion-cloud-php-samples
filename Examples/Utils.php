@@ -3,9 +3,9 @@
 // Utility class to hold the constants and static functions
 class Utils {
 
-    // TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required)
-    static $AppSid = 'XXXX-XXXX-XXXX-XXXX';
-    static $AppKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+    // TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required)
+    static $ClientId = 'XXXX-XXXX-XXXX-XXXX';
+    static $ClientSecret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
     static $ApiBaseUrl = 'https://api.groupdocs.cloud';
 	static $MyStorage = 'First Storage';
@@ -16,8 +16,8 @@ class Utils {
         $configuration = new GroupDocs\Conversion\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(Utils::$AppSid);
-        $configuration->setAppKey(Utils::$AppKey);
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
         $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
 
         // Retrun the new ConversionAPI instance
@@ -30,8 +30,8 @@ class Utils {
         $configuration = new GroupDocs\Conversion\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(Utils::$AppSid);
-        $configuration->setAppKey(Utils::$AppKey);
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
         $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
 
         // Retrun the new Info instance
@@ -44,8 +44,8 @@ class Utils {
         $configuration = new GroupDocs\Conversion\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(Utils::$AppSid);
-        $configuration->setAppKey(Utils::$AppKey);
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
 
         // Retrun the new StorageApi instance
         return new GroupDocs\Conversion\StorageApi($configuration);
@@ -57,8 +57,8 @@ class Utils {
         $configuration = new GroupDocs\Conversion\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(Utils::$AppSid);
-        $configuration->setAppKey(Utils::$AppKey);
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
 
         // Retrun the new FolderApi instance
         return new GroupDocs\Conversion\FolderApi($configuration);
@@ -70,8 +70,8 @@ class Utils {
         $configuration = new GroupDocs\Conversion\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(Utils::$AppSid);
-        $configuration->setAppKey(Utils::$AppKey);
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
 
         // Retrun the new FileApi instance
         return new GroupDocs\Conversion\FileApi($configuration);
