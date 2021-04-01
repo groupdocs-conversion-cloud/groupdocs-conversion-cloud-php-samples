@@ -18,6 +18,7 @@ include(__DIR__ . '\Convert\ConvertToPdfDirect.php');
 include(__DIR__ . '\Common\AddWatermark.php');
 include(__DIR__ . '\Common\ConvertConsecutivePages.php');
 include(__DIR__ . '\Common\ConvertSpecificPages.php');
+include(__DIR__ . '\Common\ConvertUsingCustomFont.php');
 
 include(__DIR__ . '\LoadOptionsByDocumentType\Cad\ConvertCadAndSpecifyLoadOptions.php');
 include(__DIR__ . '\LoadOptionsByDocumentType\Csv\ConvertCsvByConvertingDateTimeAndNumericData.php');
@@ -71,6 +72,7 @@ ConvertToPdfDirect::Run();
 AddWatermark::Run();
 ConvertConsecutivePages::Run();
 ConvertSpecificPages::Run();
+ConvertUsingCustomFont::Run();
 
 // Document conversion examples with loading options
 ConvertCadAndSpecifyLoadOptions::run();

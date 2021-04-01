@@ -1,5 +1,5 @@
 {  
     "require": {
-        "groupdocscloud/groupdocs-conversion-cloud": "20.11"
+        "groupdocscloud/groupdocs-conversion-cloud": "21.4"
     }
 }
