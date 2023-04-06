@@ -15,7 +15,7 @@ class ConvertToHtml {
         $settings->setFilePath("WordProcessing/four-pages.docx");
         $settings->setFormat("html");
 
-        $convertOptions = new Model\HtmlConvertOptions();
+        $convertOptions = new Model\WebConvertOptions();
         $convertOptions->setFromPage(1);
         $convertOptions->setPagesCount(1);
         $convertOptions->setFixedLayout(true);

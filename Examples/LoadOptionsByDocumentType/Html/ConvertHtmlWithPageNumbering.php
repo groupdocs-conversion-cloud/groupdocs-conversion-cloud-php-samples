@@ -15,7 +15,7 @@ class ConvertHtmlWithPageNumbering {
         $settings->setFilePath("Html/sample.html");
 		$settings->setFormat("pdf");
 		
-        $loadOptions = new Model\HtmlLoadOptions();
+        $loadOptions = new Model\WebLoadOptions();
 		$loadOptions->setPageNumbering(true);
 
         $settings->setLoadOptions($loadOptions);
