@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1705f78897cae04f7b59032c4736516",
+    "content-hash": "760ee548c27021f8706086a381311730",
     "packages": [
         {
             "name": "groupdocscloud/groupdocs-conversion-cloud",
-            "version": "23.6",
+            "version": "23.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git",
-                "reference": "2f773fcc39ca1bf07d142e1324c9a3d788d1d595"
+                "reference": "f848a96c4a0312a49338662cf23627713c6b310d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/2f773fcc39ca1bf07d142e1324c9a3d788d1d595",
-                "reference": "2f773fcc39ca1bf07d142e1324c9a3d788d1d595",
+                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/f848a96c4a0312a49338662cf23627713c6b310d",
+                "reference": "f848a96c4a0312a49338662cf23627713c6b310d",
                 "shasum": ""
             },
             "require": {
@@ -61,9 +61,9 @@
             ],
             "support": {
                 "issues": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/issues",
-                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v23.6"
+                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v23.7"
             },
-            "time": "2023-06-09T07:58:05+00:00"
+            "time": "2023-07-19T08:59:59+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
