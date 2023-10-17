@@ -46,6 +46,7 @@ class Utils {
         // Seting the configurations
         $configuration->setAppSid(Utils::$ClientId);
         $configuration->setAppKey(Utils::$ClientSecret);
+        $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
 
         // Retrun the new StorageApi instance
         return new GroupDocs\Conversion\StorageApi($configuration);
@@ -59,6 +60,7 @@ class Utils {
         // Seting the configurations
         $configuration->setAppSid(Utils::$ClientId);
         $configuration->setAppKey(Utils::$ClientSecret);
+        $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
 
         // Retrun the new FolderApi instance
         return new GroupDocs\Conversion\FolderApi($configuration);
@@ -72,9 +74,24 @@ class Utils {
         // Seting the configurations
         $configuration->setAppSid(Utils::$ClientId);
         $configuration->setAppKey(Utils::$ClientSecret);
+        $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
 
         // Retrun the new FileApi instance
         return new GroupDocs\Conversion\FileApi($configuration);
+    }
+
+	// Getting the Conversion LicenseAPI API Instance
+    public static function GetLicenseApiInstance() {
+        // intializing the configuration
+        $configuration = new GroupDocs\Conversion\Configuration();
+
+        // Seting the configurations
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
+        $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
+
+        // Retrun the new LicenseApi instance
+        return new GroupDocs\Conversion\LicenseApi($configuration);
     }
 
     // Uploading sample files into storage

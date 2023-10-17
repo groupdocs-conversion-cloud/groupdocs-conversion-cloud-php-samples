@@ -5,6 +5,8 @@ require_once(__DIR__ . '\vendor\autoload.php');
 include(__DIR__ . '\Utils.php');
 include(__DIR__ . '\Info\GetSupportedConversions.php');
 include(__DIR__ . '\Info\GetDocumentInformation.php');
+include(__DIR__ . '\Info\GetMeteredConsumption.php');
+include(__DIR__ . '\Info\GetLicenseInfo.php');
 
 include(__DIR__ . '\Convert\ConvertToWordProcessing.php');
 include(__DIR__ . '\Convert\ConvertToPdf.php');
