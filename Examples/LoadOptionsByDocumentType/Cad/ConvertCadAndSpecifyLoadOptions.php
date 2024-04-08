@@ -16,8 +16,7 @@ class ConvertCadAndSpecifyLoadOptions {
 		$settings->setFormat("pdf");
 		
         $loadOptions = new Model\CadLoadOptions();
-		$loadOptions->setWidth(1920);
-		$loadOptions->setHeight(1080);
+		$loadOptions->setFormat("dwg");
 
         $settings->setLoadOptions($loadOptions);
         $settings->setOutputPath("converted");
