@@ -94,6 +94,20 @@ class Utils {
         return new GroupDocs\Conversion\LicenseApi($configuration);
     }
 
+    // Getting the Async API Instance
+    public static function GetAsyncApiInstance() {
+        // intializing the configuration
+        $configuration = new GroupDocs\Conversion\Configuration();
+
+        // Seting the configurations
+        $configuration->setAppSid(Utils::$ClientId);
+        $configuration->setAppKey(Utils::$ClientSecret);
+        $configuration->setApiBaseUrl(Utils::$ApiBaseUrl);
+
+        // Retrun the new ConversionAPI instance
+        return new GroupDocs\Conversion\AsyncApi($configuration);
+    }    
+
     // Uploading sample files into storage
     public static function UploadResources() {
         $storageApi = self::GetStorageApiInstance();

@@ -18,6 +18,9 @@ include(__DIR__ . '\Convert\ConvertToSpreadsheet.php');
 include(__DIR__ . '\Convert\ConvertToPdfDirect.php');
 include(__DIR__ . '\Convert\ConvertToPdfDirectOptions.php');
 
+include(__DIR__ . '\Convert\Async\ConvertToPdfAsync.php');
+include(__DIR__ . '\Convert\Async\ConvertToPdfDirectAsync.php');
+
 include(__DIR__ . '\Common\AddWatermark.php');
 include(__DIR__ . '\Common\ConvertConsecutivePages.php');
 include(__DIR__ . '\Common\ConvertSpecificPages.php');
@@ -108,3 +111,7 @@ ConvertTxtBySpecifyingEncoding::run();
 ConvertWordProcessingByHidingComments::run();
 ConvertWordProcessingByHidingTrackedChanges::run();
 ConvertWordProcessingBySpecifyingFontSubstitution::run();
+
+
+ConvertToPdfAsync::Run();
+ConvertToPdfDirectAsync::Run();
