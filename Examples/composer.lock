@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8ec717404ce41fa3003eb87390a888d",
+    "content-hash": "95b3ccc941213ecb00533526b548e186",
     "packages": [
         {
             "name": "groupdocscloud/groupdocs-conversion-cloud",
-            "version": "24.8",
+            "version": "24.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git",
-                "reference": "439c33edff9444998421181d04997e0fd4c7a212"
+                "reference": "c5c8a8113b42b09ce0f0219a164d30a701e9249c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/439c33edff9444998421181d04997e0fd4c7a212",
-                "reference": "439c33edff9444998421181d04997e0fd4c7a212",
+                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/c5c8a8113b42b09ce0f0219a164d30a701e9249c",
+                "reference": "c5c8a8113b42b09ce0f0219a164d30a701e9249c",
                 "shasum": ""
             },
             "require": {
@@ -61,9 +61,9 @@
             ],
             "support": {
                 "issues": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/issues",
-                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v24.8"
+                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v24.11"
             },
-            "time": "2024-08-01T08:25:44+00:00"
+            "time": "2024-11-07T07:46:47+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -193,16 +193,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8"
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.3"
+                "source": "https://github.com/guzzle/promises/tree/2.0.4"
             },
             "funding": [
                 {
@@ -272,7 +272,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-18T10:29:17+00:00"
+            "time": "2024-10-17T10:06:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
