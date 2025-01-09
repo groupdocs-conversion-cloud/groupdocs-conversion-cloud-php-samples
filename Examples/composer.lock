@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95b3ccc941213ecb00533526b548e186",
+    "content-hash": "4eed46b7c589ee999ebeeb3b599feec6",
     "packages": [
         {
             "name": "groupdocscloud/groupdocs-conversion-cloud",
-            "version": "24.11",
+            "version": "24.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git",
-                "reference": "c5c8a8113b42b09ce0f0219a164d30a701e9249c"
+                "reference": "adaa4d1168b6108aacfe950a2f1302b334e9351c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/c5c8a8113b42b09ce0f0219a164d30a701e9249c",
-                "reference": "c5c8a8113b42b09ce0f0219a164d30a701e9249c",
+                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/adaa4d1168b6108aacfe950a2f1302b334e9351c",
+                "reference": "adaa4d1168b6108aacfe950a2f1302b334e9351c",
                 "shasum": ""
             },
             "require": {
@@ -61,9 +61,9 @@
             ],
             "support": {
                 "issues": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/issues",
-                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v24.11"
+                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v24.12"
             },
-            "time": "2024-11-07T07:46:47+00:00"
+            "time": "2024-12-27T08:24:06+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -596,16 +596,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.5.0",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1"
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
-                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
                 "shasum": ""
             },
             "require": {
@@ -613,12 +613,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -643,7 +643,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.1"
             },
             "funding": [
                 {
@@ -659,16 +659,16 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T09:32:20+00:00"
+            "time": "2024-09-25T14:20:29+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
