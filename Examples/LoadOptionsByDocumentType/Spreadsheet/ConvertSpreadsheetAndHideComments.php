@@ -16,7 +16,7 @@ class ConvertSpreadsheetAndHideComments {
 		$settings->setFormat("pdf");
 		
         $loadOptions = new Model\SpreadsheetLoadOptions();		
-		$loadOptions->setHideComments(true);
+		$loadOptions->setPrintComments(Model\SpreadsheetLoadOptions::PRINT_COMMENTS_PRINT_NO_COMMENTS);
 		$loadOptions->setOnePagePerSheet(true);		
 
         $settings->setLoadOptions($loadOptions);

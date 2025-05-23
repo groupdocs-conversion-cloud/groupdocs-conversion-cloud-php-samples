@@ -16,7 +16,7 @@ class ConvertPresentationByHidingComments {
 		$settings->setFormat("pdf");
 		
         $loadOptions = new Model\PresentationLoadOptions();
-		$loadOptions->setHideComments(true);
+		$loadOptions->setCommentsPosition(Model\PresentationLoadOptions::COMMENTS_POSITION_NONE);
 
         $settings->setLoadOptions($loadOptions);
         $settings->setOutputPath("converted");
