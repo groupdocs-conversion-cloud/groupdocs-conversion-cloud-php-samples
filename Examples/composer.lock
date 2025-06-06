@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83832602bedcef6d6b5e5026bc1bcf8f",
+    "content-hash": "87fe9eb2dd5c4bdcc3faed0c3cb5fedf",
     "packages": [
         {
             "name": "groupdocscloud/groupdocs-conversion-cloud",
-            "version": "25.5",
+            "version": "25.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php.git",
-                "reference": "cb007d7e00105bed94df8e2c4970810902199f7d"
+                "reference": "43fdbdfeae02e2805ec572720dbb23dfbf485dad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/cb007d7e00105bed94df8e2c4970810902199f7d",
-                "reference": "cb007d7e00105bed94df8e2c4970810902199f7d",
+                "url": "https://api.github.com/repos/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/zipball/43fdbdfeae02e2805ec572720dbb23dfbf485dad",
+                "reference": "43fdbdfeae02e2805ec572720dbb23dfbf485dad",
                 "shasum": ""
             },
             "require": {
@@ -61,9 +61,9 @@
             ],
             "support": {
                 "issues": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/issues",
-                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v25.5"
+                "source": "https://github.com/groupdocs-conversion-cloud/groupdocs-conversion-cloud-php/tree/v25.6"
             },
-            "time": "2025-05-22T06:53:18+00:00"
+            "time": "2025-06-05T08:15:51+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -596,16 +596,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.5.1",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6"
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
-                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/63afe740e99a13ba87ec199bb07bbdee937a5b62",
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62",
                 "shasum": ""
             },
             "require": {
@@ -618,7 +618,7 @@
                     "name": "symfony/contracts"
                 },
                 "branch-alias": {
-                    "dev-main": "3.5-dev"
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -643,7 +643,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.1"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.6.0"
             },
             "funding": [
                 {
@@ -659,7 +659,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-25T14:20:29+00:00"
+            "time": "2024-09-25T14:21:43+00:00"
         }
     ],
     "packages-dev": [],

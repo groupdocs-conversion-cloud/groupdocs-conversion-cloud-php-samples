@@ -17,6 +17,7 @@ class ConvertWordProcessingByHidingComments {
 		
         $loadOptions = new Model\WordProcessingLoadOptions();		
 		$loadOptions->setHideComments(true);
+        $loadOptions->setCommentDisplayMode(Model\WordProcessingLoadOptions::COMMENT_DISPLAY_MODE_HIDDEN);
 
         $settings->setLoadOptions($loadOptions);
         $settings->setOutputPath("converted");
