@@ -16,7 +16,7 @@ class ConvertEmailWithAttachments {
 		$settings->setFormat("pdf");
 		
         $loadOptions = new Model\EmailLoadOptions();
-		$loadOptions->setConvertAttachments(true);
+		$loadOptions->setDisplayAttachments(true);
 
         $settings->setLoadOptions($loadOptions);
         $settings->setOutputPath("converted");
