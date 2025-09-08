@@ -11,7 +11,7 @@ class ConvertToPdfDirectOptions {
         
         // Prepare request
         $filePath = dirname(realpath(__DIR__)) . '\Resources\WordProcessing\password-protected.docx';
-        $loadOptions = new Model\DocxLoadOptions();
+        $loadOptions = new Model\WordProcessingLoadOptions();
         $loadOptions->setFormat("docx");
         $loadOptions->setPassword("password");        
         $request = new Requests\ConvertDocumentDirectRequest("pdf", $filePath, null, null, $loadOptions);

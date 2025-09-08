@@ -14,7 +14,7 @@ class ConvertToPdf {
         $settings->setStorageName(Utils::$MyStorage);
         $settings->setFilePath("WordProcessing/password-protected.docx");
         $settings->setFormat("pdf");
-        $loadOptions = new Model\DocxLoadOptions();
+        $loadOptions = new Model\WordProcessingLoadOptions();
         $loadOptions->setPassword("password");
         $settings->setLoadOptions($loadOptions);
 
