@@ -15,7 +15,7 @@ class ConvertNoteBySpecifyingFontSubstitution {
         $settings->setFilePath("Note/sample.one");
 		$settings->setFormat("pdf");
 		
-        $loadOptions = new Model\OneLoadOptions();
+        $loadOptions = new Model\NoteLoadOptions();
 		$loadOptions->setFontSubstitutes(["Tahoma" => "Arial", "Times New Roman" => "Arial"]);
 
         $settings->setLoadOptions($loadOptions);
