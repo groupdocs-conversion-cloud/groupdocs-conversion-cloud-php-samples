@@ -21,7 +21,7 @@ class ConvertToWordProcessing {
         $loadOptions->setFlattenAllFields(true);
 
         $settings->setLoadOptions($loadOptions);
-        $settings->setConvertOptions(new Model\DocxConvertOptions());
+        $settings->setConvertOptions(new Model\WordProcessingConvertOptions());
         $settings->setOutputPath("converted");
 
         // Convert

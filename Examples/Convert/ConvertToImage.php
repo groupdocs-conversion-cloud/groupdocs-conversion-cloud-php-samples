@@ -15,7 +15,7 @@ class ConvertToImage {
         $settings->setFilePath("WordProcessing/four-pages.docx");
         $settings->setFormat("jpg");
 
-        $convertOptions = new Model\JpgConvertOptions();
+        $convertOptions = new Model\ImageConvertOptions();
         $convertOptions->setFromPage(1);
         $convertOptions->setPagesCount(2);        
 
